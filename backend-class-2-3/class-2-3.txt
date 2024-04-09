@@ -1,0 +1,19 @@
+# folder structure -- in backend -- >
+    when we have routes  like /users/123456 if we define all these routes in a single server it will hamper the readeability of the code 
+    there for we create diffrent folder like route in which we have route defined and  controller folder - in which we have diffrent controller file for diffrent route which will have diffrent bussinuess logic  (any logic for expamle create a entity in an db when this url is hit or any request that come to do somthing) or other folder (like model folder)
+
+    route mai ye define ki konsa route is controler se mapped hai.
+
+    --> when a route is hit a function is run and the functioin is in the controoller folder . 
+
+    stucture - model , working or function -> controler
+
+    --> model folder -->  when we need to create/define a schema(structure of data) for database for specific route  is created in model 
+
+    --> config folder --> every boilerpate  code related to server like port number, database connection etc are written here.
+
+    // bad practice  to just write port nummber in listen
+
+    // good practice make .env file and define the port number u will be using in it and other the server or backend depend like database url...
+
+    // h.w create blog server

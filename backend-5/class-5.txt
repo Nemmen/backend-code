@@ -1,0 +1,61 @@
+#client , server 
+
+#what happen when we hit ww.google.com request - all process  (there are many network layer which take the whole process it comes under networking domain.... )
+
+
+#what is express -->  it's a minimal and flexible Node.js web application framework that provides a robust set of features that enables developer to build server-side application that handle http req and res , connect to database and perform other tasks
+
+client(web , android - ios ) <--> API <--> Mongoose (mongoose driver) <--> mongodb ( connection through tcp/ip )
+
+#Middleware : in express , middleware refres to a function that processes incoming http requests and can perform various actions such as modifying the request objects , invoking the next middleware function in the chain , or sending a response to the client
+--> we do it by app.use() ....
+
+#route-- ->>app.get(), app.post() etc..
+
+#mounting -> in express js, "mounting" refres to  the process of attaching an instance of an application like middleware or sub - appliction to specific path in the main express.js application
+## refer mongoose documentation for middleware....
+
+## testing api routes --> using postman... 
+
+### body parser --> to parse the data from request body... or just use express.json() in app.use directly as it is built on body pareser and easy to use...
+]
+#mongodb -- > ...read documentation
+
+## mongoose --> it is an object data modeling (odm) libraray for mongodb and node.js that provides a higher level abstraction layer for working with mongoDB . it simplifies the process of interacting with mongodb databases by providing a schema-based solution to model and validate data
+
+#ODM ->  an objet-modeling ( odm ) librray is a software tool or libarray taht provides an abstraction layer on top of a daabse , allowing developers to work with their data using object-oriented paradigms instead of sql queries.they 
+
+#nodemon
+
+#Optimal Folder Structure 
+- /config : configuration files (database, express)
+- /controllers : business logic of the application
+- /models : data models/schema
+- /public : static files (css, js)
+- /routes : routing handlers and middlewares
+- /services : utility functions
+
+#MVC -->  MVC stands for Model-View-Controller , which is a software architectural pattern used in web development to seprate the application concerns into three interconnected components..
+
+model , view (this components defines the presentation and user interface of the application it is responsible for rendering data to the user in away that is easy to undersatnd and interact with  ), controller( this component is responsible for handling incoming)
+
+#CURD -->   Create Update Read Delete (post , put , get , delete (respectively))
+
+#diffrent types of interaction with db 
+
+#REF OPTION IN MONGOOSE SCHEMA....-> it show whos model document  id we are talking about   in our req object... 
+        In Mongoose, the ref option is used to establish a relationship between two models (collections) in a MongoDB database. It is used inside a Mongoose schema to specify the referenced model for a particular field.
+        In this example, the authorSchema has a field called books, which is an array of Objectid values that reference the Book model. The bookSchema has a field called author, which is an Objectid value that references the Author model.
+        By using the ref option, we can establish the relationship between the two models. This allows us to easily perform operations like querying for all the books written by a particular author, or finding all the authors of a particular book.
+        The ref option also allows Mongoose to automatically populate the referenced documents when we query for the parent document. For example, if we query for a book and specify the author field to be populated, Mongoose will automatically fetch the corresponding Author document and populate the author field.
+        Overall, the ref option is an important feature of Mongoose that allows us to establish relationships between models and perform related operations efficiently.1. Synchronous(callback based) - req\
+
+#router --> we use router in other file because we do not have application access of other file we have of index file but not of other file  that is why we have router object in other file --> (basically routes file)
+
+#springboot--> learn about it...
+
+# we can connect with the cloud mongodb also just select compass when u hit connect and before all the process is simple just remember to save the passworder and database name as u need to replacve it in your connection string
+
+#useForm in react learn --- >..
+
+#anotation --> route ke niche hi controller

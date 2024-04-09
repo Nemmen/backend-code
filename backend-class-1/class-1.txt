@@ -1,0 +1,23 @@
+#http - pritocal - standard way to communicate btween client and server
+#application -layer -->> (read networking concept of  -- osi modle )
+
+# domain name resolution  : hostname to ip address conversion. ( jab kisi link pe click kra tho vo browser pe khula tho browser domain ni smjhata but ip smjhata tho iska use krte convert krne ke liye)
+
+now connection stablise krna server and client mai vo ham tcp and "three way handshake" (isse krte) and aur bhi process hai () encryption ) se krte hai 
+
+
+##http/https protocol mai majorly four request hai --> get , put , delete , post
+
+
+#get request -> retrive data
+#put request -> update data
+#post request -> submit krna -  nayi chezz dalna  database mai
+#delete request -> delete data
+
+### imdepotent request konsi hai H.W
+
+we will create server through express - a framework to create server side application  in node js .
+
+## mongosh is the connector that make connection with node and database...
+
+
