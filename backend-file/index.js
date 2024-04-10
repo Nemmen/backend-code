@@ -40,7 +40,7 @@ cloudConnect()
 
 //api route mout krna h
 
-const upload = require('./routes/upload');
+const upload = require('./routes/FileUpload');
 
 app.use('/api/v1/upload', upload);
 

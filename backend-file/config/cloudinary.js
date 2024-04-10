@@ -1,6 +1,6 @@
 const cloudinary = require('cloudinary').v2;
 require('dotenv').config();
-exports.cloudinaryConfig = () => {
+const cloudinaryConfig = () => {
     try{
 
         cloudinary.config({
@@ -14,3 +14,5 @@ exports.cloudinaryConfig = () => {
         console.log('Cloudinary connection failed');
     }
 }
+
+module.exports = cloudinaryConfig;
